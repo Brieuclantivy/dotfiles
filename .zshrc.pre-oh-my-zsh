@@ -1,0 +1,15 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/lbrieuc/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+alias norm=/home/lbrieuc/norminette/norminette
+alias norm-update=/home/lbrieuc/norminette/update.sh
+alias norm-debug=/home/lbrieuc/norminette/debug.sh

@@ -3,13 +3,13 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/lbrieuc/.oh-my-zsh"
-
+export LANG=en_US.UTF-8
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
-
+EDITOR="emacs"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -120,3 +120,16 @@ alias ga="git add"
 alias gm="git commit -m"
 alias kali="sudo docker run -i -t docker.io/kalilinux/kali-linux-docker /bin/bash"
 alias tt="touch"
+alias sr="source ~/.zshrc"
+alias pp="ping 8.8.8.8"
+alias nn="npm install"
+alias na="npm ausit fix"
+alias mon="service mongod start"
+alias gg="git clone"
+alias rr="php bin/console debug:router"
+alias gitblame="git ls-files | xargs -n1 git blame --line-porcelain | sed -n 's/^author //p' | sort -f | uniq -ic | sort -nr"
+export PATH=$PATH:/opt/gitkraken
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/lbrieuc/.sdkman"
+[[ -s "/home/lbrieuc/.sdkman/bin/sdkman-init.sh" ]] && source "/home/lbrieuc/.sdkman/bin/sdkman-init.sh"
